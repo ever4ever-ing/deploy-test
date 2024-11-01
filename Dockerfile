@@ -7,7 +7,7 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 # Copia el resto de los archivos de tu aplicación
 COPY . .
-# Expone el puerto en el que se ejecutará tu aplicación Flask
-EXPOSE 5000
+# Expone el puerto 80 en el que se ejecutará tu aplicación Flask
+EXPOSE 80
 # Comando para ejecutar la aplicación Flask
 CMD ["python", "app.py"]
